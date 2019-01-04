@@ -1,40 +1,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="The homepage of the personal website of Cynthia Hsu">
+    <meta name="description" content="Cynthia Hsu Personal Website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Minified Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <title>Cynthia Hsu's website</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Cynthia Hsu</h1>
+    <div class="header">
+        <h1>Cynthia Hsu</h1>
+    </div>
+
     <nav>
-    <ul>
-      <li>Home</li>
-      <li>Resume</li>
-      <li>Contact</li>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="index.html" >Home</a></li>
+      <li>
+        <a href="code.html">Code</a></li>
+      <li>
+        <a href="creative.html">Creative</a></li>
     </ul>
-    </nav>
-    <p>Hi, I'm a 3rd year studying EECS (Electrical Engineering & Computer Science) at UC Berkeley!</p>
-    <section>
-    <h2>Coursework</h2>
-    <ul>
-      <li>CS189: Intro to Machine Learning <i>(in progress)</i></li>
-      <li>CS186: Databases <i>(in progress)</i></li>
-      <li>CS170: Designing Algorithms and Intractable Problems</li>
-      <li>CS188: Intro to Artificial Intelligence</li>
-      <li>CS61C: Great Ideas in Computer Architecture</li>
-      <li>CS61B: Data Structures</li>
-      <li>CS61A: Fundamentals of Programming</li>
-    </ul>
-    </section>
-    <section>
-    <h2>Projects</h2>
-    <h3>Auto-Billing</h3>
-    <p>For my summer internship, I took responsibility over designing and implementing a feature to the main customer portal that would allow clients to be automatically billed for any charges that occured during the prior day. I used React.JS primarily to implement the frontend and also used JavaScript with Stripe API to implement the backend. This addition went-live and was quickly adopted by 6 out of 50 clients.</p>
-    <h3>CPU Design</h3>
-    <p>I designed a 2-cycle pipelined processor using Logisim, a visual RTL, that successfully implemented the core RISC-V instruction set.</p>
-    <h3>Git-let</h3>
-    <p>I created a miniaturized version-control system using several Java classes to represent and serialize files and commits. </p>
-    </section>
+  </nav>
+
+
+    <div class="container">
+
+
+
+
+      <p>Hi, I'm a 3rd year studying EECS (Electrical Engineering & Computer Science) at UC Berkeley!</p>
+
+        <h2>Coursework</h2>
+        <ul>
+          <li>CS189: Intro to Machine Learning <i>(in progress)</i></li>
+          <li>CS186: Databases <i>(in progress)</i></li>
+          <li>CS170: Designing Algorithms and Intractable Problems</li>
+          <li>CS188: Intro to Artificial Intelligence</li>
+          <li>CS61C: Great Ideas in Computer Architecture</li>
+          <li>CS61B: Data Structures</li>
+          <li>CS61A: Fundamentals of Programming</li>
+        </ul>
+
+        <div class="projects container">
+          <h2>Projects</h2>
+          <div class="row">
+            <section class="col-sm-6 col-md-4">
+              <h3>Auto-Billing</h3>
+              <p>For my summer internship, I took responsibility over designing and implementing a feature to the main customer portal that would allow clients to be automatically billed for any charges that occured during the prior day. I used React.JS primarily to implement the frontend and also used JavaScript with Stripe API to implement the backend. This addition went-live and was quickly adopted by 6 out of 50 clients.</p>
+            </section>
+            <section class="col-sm-6 col-md-4">
+              <h3>CPU Design</h3>
+              <p>I designed a 2-cycle pipelined processor using Logisim, a visual RTL, that successfully implemented the core RISC-V instruction set.</p>
+            </section>
+            <section class="col-sm-6 col-md-4">
+              <h3>Git-let</h3>
+              <p>I created a miniaturized version-control system using several Java classes to represent and serialize files and commits. </p>
+            </section>
+          </div><!--row-->
+        </div><!--projects container-->
+
+
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,27 @@
+.header {
+	font-size: 90px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bolder;
+	color: #666;
+	position: fixed;
+	top: 40px;
+	right: 40px;
+
+}
+
+nav {
+	font-family: 'Noto Sans', sans-serif;
+	position: fixed;
+	top: 110px;
+	right: 40px;
+
+}
+
+h1 {
+	justify-content: center;
+}
+
+.container {
+	font-family: 'Noto Sans', sans-serif;
+	margin-top: 150px;
+}
